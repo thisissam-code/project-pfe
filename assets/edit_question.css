@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: left;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+/* Style du formulaire */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea, select, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #002855;
+}
+
+/* Style des réponses */
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answers-container div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Bouton Annuler */
+.cancel-btn {
+    background-color: #dc3545;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #a71d2a;
+}

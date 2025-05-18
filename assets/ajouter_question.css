@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: left;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+/* Flexbox pour le formulaire */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea, select, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #002855;
+}
+
+/* Style du tableau */
+.table-container {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+a.edit {
+    background-color: #ffc107;
+}
+
+a.delete {
+    background-color: #dc3545;
+}
+
+a:hover, button:hover {
+    opacity: 0.8;
+}
+
+/* Style pour les réponses */
+.answer-true {
+    color: green;
+    font-weight: bold;
+}
+
+.answer-false {
+    color: red;
+    font-weight: bold;
+}

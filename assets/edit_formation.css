@@ -1,0 +1,179 @@
+/* Edit Formation Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  :root {
+    --primary: #0a3d91;
+    --primary-dark: #072e6e;
+    --primary-light: #1a4da1;
+    --secondary: #f39200;
+    --secondary-dark: #d27d00;
+    --secondary-light: #ffa726;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --text-muted: #6c757d;
+    --bg-light: #f8f9fa;
+    --bg-dark: #343a40;
+    --border-color: #dee2e6;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    --transition: all 0.3s ease;
+    --radius: 0.5rem;
+    --radius-sm: 0.25rem;
+    --radius-lg: 1rem;
+  }
+  
+  body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    position: relative;
+  }
+  
+  h2 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.75rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(10, 61, 145, 0.25);
+  }
+  
+  select[multiple] {
+    height: 200px;
+  }
+  
+  button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+  }
+  
+  .btn-back {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .btn-back:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+  }
+  
+  .message {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+  }
+  
+  .success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(40, 167, 69, 0.2);
+  }
+  
+  .error {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--danger);
+    border: 1px solid rgba(220, 53, 69, 0.2);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+  
+    .container {
+      padding: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    input,
+    select,
+    textarea,
+    button {
+      padding: 0.625rem 0.875rem;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  
